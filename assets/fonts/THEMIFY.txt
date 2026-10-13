@@ -1,0 +1,4 @@
+Themify Icons
+Font downloaded from the original Teaboom.ru page for the shopping cart glyph.
+Project and distribution terms: https://themify.me/themify-icons
+Original font URL and author attribution are listed in README.md.

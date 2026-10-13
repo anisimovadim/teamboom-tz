@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Ананасовый улун: выбор фасовки, цены и короткое описание товара."
+    />
+    <title>Ананасовый улун — карточка товара</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/product.js" defer></script>
+  </head>
+
+  <body>
+    <main class="page">
+      <article class="product" aria-labelledby="product-title">
+        <header class="product__header">
+          <p class="product__category">
+            Китайский светлый ароматизированный улун
+          </p>
+          <h1 class="product__title" id="product-title">Ананасовый улун</h1>
+        </header>
+
+        <div class="product__main">
+          <div class="product__image-wrap">
+            <img
+              class="product__image"
+              src="assets/images/product.jpg"
+              alt="Ананасовый улун: скрученные чайные листья с кусочками цукатов"
+              width="970"
+              height="970"
+              fetchpriority="high"
+            />
+          </div>
+
+          <form class="product__form" id="product-form">
+            <fieldset class="variants">
+              <legend class="variants__legend">Фасовка</legend>
+              <div class="variants__list">
+                <div class="variant">
+                  <input
+                    class="variant__input visually-hidden"
+                    type="radio"
+                    name="package"
+                    id="package-100"
+                    value="100"
+                    checked
+                  />
+                  <label class="variant-label" for="package-100">
+                    <span class="variant__name"
+                      >100 г<span class="variant__sku">арт: 01306</span></span
+                    >
+                    <span class="variant__prices"
+                      ><span class="variant__price">326.40 ₽</span
+                      ><del class="variant__old-price">349.20 ₽</del></span
+                    >
+                  </label>
+                </div>
+                <div class="variant">
+                  <input
+                    class="variant__input visually-hidden"
+                    type="radio"
+                    name="package"
+                    id="package-500"
+                    value="500"
+                  />
+                  <label class="variant-label" for="package-500">
+                    <span class="variant__name"
+                      >500 г<span class="variant__sku">арт: 01307</span></span
+                    >
+                    <span class="variant__prices"
+                      ><span class="variant__price">1432.00 ₽</span
+                      ><del class="variant__old-price">1646.00 ₽</del></span
+                    >
+                  </label>
+                </div>
+                <div class="variant">
+                  <input
+                    class="variant__input visually-hidden"
+                    type="radio"
+                    name="package"
+                    id="package-1000"
+                    value="1000"
+                  />
+                  <label class="variant-label" for="package-1000">
+                    <span class="variant__name"
+                      >1000 г<span class="variant__sku">арт: 01308</span></span
+                    >
+                    <span class="variant__prices"
+                      ><span class="variant__price">2064.00 ₽</span
+                      ><del class="variant__old-price">2592.00 ₽</del></span
+                    >
+                  </label>
+                </div>
+                <div class="variant">
+                  <input
+                    class="variant__input visually-hidden"
+                    type="radio"
+                    name="package"
+                    id="package-5000"
+                    value="5000"
+                  />
+                  <label class="variant-label" for="package-5000">
+                    <span class="variant__name"
+                      >5000 г<span class="variant__sku">арт: 01309</span></span
+                    >
+                    <span class="variant__prices"
+                      ><span class="variant__price">6320.00 ₽</span
+                      ><del class="variant__old-price">8710.00 ₽</del></span
+                    >
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="selected-summary" aria-live="polite" aria-atomic="true">
+              <div class="selected-summary__details">
+                <p>Выбрано: <strong id="selected-weight">100 г</strong></p>
+                <p class="selected-summary__sku">
+                  Артикул: <span id="product-sku">01306</span>
+                </p>
+              </div>
+              <div class="selected-summary__prices">
+                <span class="visually-hidden">Актуальная цена:</span>
+                <strong class="selected-summary__price"
+                  ><span id="product-price">326.40</span> ₽</strong
+                >
+                <span class="visually-hidden">Старая цена:</span>
+                <del class="selected-summary__old-price"
+                  ><span id="product-old-price">349.20</span> ₽</del
+                >
+              </div>
+            </div>
+
+            <button class="cart-button" id="cart-button" type="submit">
+              <span class="cart-button__icon" aria-hidden="true"></span>
+              В корзину
+            </button>
+            <p class="visually-hidden" id="cart-status" role="status"></p>
+            <noscript>
+              <p class="no-script">
+                Включите JavaScript для обновления цены и артикула. Сейчас
+                показана фасовка 100 г.
+              </p>
+            </noscript>
+          </form>
+        </div>
+
+        <section
+          class="product__description"
+          aria-labelledby="description-title"
+        >
+          <h2 id="description-title">Описание</h2>
+          <p>
+            Светлый фуцзяньский улун с ароматом спелого ананаса. Крупные
+            скрученные листья раскрываются в прозрачный светло-янтарный настой с
+            яркой фруктовой нотой.
+          </p>
+          <p>
+            <strong>Состав:</strong> китайский бирюзовый чай, цукаты,
+            натуральные ароматические масла.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <section
+      class="cart-notification"
+      id="cart-notification"
+      aria-labelledby="notification-title"
+      hidden
+    >
+      <button
+        class="cart-notification__close"
+        id="notification-close"
+        type="button"
+        aria-label="Закрыть уведомление"
+      >
+        ×
+      </button>
+      <img
+        class="cart-notification__image"
+        src="assets/images/product.jpg"
+        alt=""
+        width="76"
+        height="76"
+      />
+      <div class="cart-notification__content">
+        <p class="cart-notification__title" id="notification-title">
+          Ананасовый улун, 100 г
+        </p>
+        <p class="cart-notification__message" id="notification-message">
+          Товар добавлен в корзину
+        </p>
+        <button
+          class="cart-notification__checkout"
+          id="notification-checkout"
+          type="button"
+        >
+          Оформить заказ
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
